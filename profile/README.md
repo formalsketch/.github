@@ -29,4 +29,3 @@ A finite state machine designer that runs in the browser.
 - Versioned JSON import / export
 - Share by URL (state encoded in the hash)
 - Natural-language generation: describe an FSM, get the diagram
-- 
