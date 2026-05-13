@@ -1,12 +1,32 @@
-## Hi there 👋
+## formalsketch
 
-<!--
+Browser-based tools for formal languages and automata. No accounts, no backend, no install.
 
-**Here are some ideas to get you started:**
+### FSM Studio
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+[Live demo](https://formalsketch.github.io) · [Repo](https://github.com/formalsketch/formalsketch.github.io)
+
+![FSM Studio](https://github.com/formalsketch/formalsketch.github.io/raw/main/docs/screenshot.png)
+
+A finite state machine designer that runs in the browser.
+
+**Editor**
+- Canvas drawing: double-click to add a state, shift-drag to add a transition, drag to move, Delete to remove
+- Multi-FSM workspace with a sidebar; everything persists in localStorage
+- Undo / redo, light / dark / system themes
+- Touch support, responsive canvas, keyboard-only operation
+
+**Algorithms**
+- Step-by-step NFA simulator with state highlighting
+- Regex to NFA (Thompson's construction)
+- NFA to DFA (subset construction)
+- DFA minimization (partition refinement)
+- Auto-layout for generated diagrams
+- Lint: missing start state, nondeterminism, missing transitions, unreachable states
+
+**Export and share**
+- PNG, SVG, LaTeX (TikZ, with standalone or snippet mode)
+- Versioned JSON import / export
+- Share by URL (state encoded in the hash)
+- Natural-language generation: describe an FSM, get the diagram
+- 
